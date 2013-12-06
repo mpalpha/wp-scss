@@ -1,8 +1,8 @@
 === WP-SCSS ===
-Contributors: connectthink
-Donate link: http://example.com/
+Contributors: connecthink & mpalpha
+Donate link: http://jasonlusk.com
 Tags: sass, scss, css
-Plugin URI: https://github.com/ConnectThink/WP-SCSS
+Plugin URI: https://github.com/mpalpha/WP-SCSS
 Requires at least: 3.0.1
 Tested up to: 3.6
 Stable tag: 1.0
@@ -17,7 +17,7 @@ Compiles .scss files on your wordpress install using [lefo's scssphp](https://gi
 
 The plugin only compiles when changes have been made to the scss files. Compiles are made to the matching css file, so disabling this plugin will not take down your stylesheets. In the instance where a matching css file does not exist yet, the plugin will create the appropriate css file in the css directory. 
 
-[Get detailed instructions on github](https://github.com/ConnectThink/WP-SCSS)
+[Get detailed instructions on github](https://github.com/mpalpha/WP-SCSS)
 
 == Installation ==
 
@@ -55,7 +55,7 @@ Do you have errors printing to the front end? If not, check your log file in you
 Make sure your directories are properly defined in the settings. Paths are defined from the root of the theme.
 
 = I'm having other issues and need help =
-If you are having issues with the plugin, create an issue on [github](https://github.com/ConnectThink/WP-SCSS), and we'll do our best to help.
+If you are having issues with the plugin, create an issue on [github](https://github.com/mpalpha/WP-SCSS), and we'll do our best to help.
 
 == Changelog ==
 
