@@ -1,14 +1,14 @@
 <?php 
 /**
  * Plugin Name: WP-SCSS
- * Plugin URI: https://github.com/ConnectThink/WP-SCSS
+ * Plugin URI: https://github.com/mpalpha/WP-SCSS
  * Description: Compiles scss files live on wordpress.
  * Version: 1.0.0
- * Author: Connect Think
- * Author URI: http://connectthink.com
+ * Author: mpalpha
+ * Author URI: https://github.com/mpalpha/WP-SCSS
  * License: GPLv3
  */
-
+ 
 /**
  * Plugin Workflow
  *    1. Create plugin global variables
