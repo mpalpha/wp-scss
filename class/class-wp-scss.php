@@ -8,14 +8,14 @@ class Wp_Scss {
    * @access public
    */
   public $scss_dir, $css_dir, $compile_method, $scssc, $compile_errors;
-   
-
+  
   /**
    * Set values for Wp_Scss::properties
    * 
    * @param string scss_dir - path to source directory for scss files
    * @param string css_dir - path to output directory for css files
    * @param string method - type of compile (compressed, expanded, etc)
+   * @param string asset_dir - asset dir
    * 
    * @var object scssc - instantiate the compiling object.
    *
@@ -24,12 +24,18 @@ class Wp_Scss {
   public function __construct ($scss_dir, $css_dir, $compile_method) {
     $this->scss_dir = $scss_dir;
     $this->css_dir = $css_dir;
+	$this->asset_dir = $asset_dir;
     $this->compile_method = $compile_method;
 
     global $scssc;
     $scssc = new scssc();
     $scssc->setFormatter($compile_method);
-    $scssc->setImportPaths($scss_dir); 
+    $scssc->setImportPaths($scss_dir);
+
+	$scssc->registerFunction("asset-dir", function() {
+	  return get_stylesheet_directory_uri();
+	});
+	// $scssc->compile('/* set asset dir */ $asset-dir: asset-dir();');
 
     $this->compile_errors = array();
   }
