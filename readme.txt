@@ -17,6 +17,8 @@ Compiles .scss files on your wordpress install using [lefo's scssphp](https://gi
 
 The plugin only compiles when changes have been made to the scss files. Compiles are made to the matching css file, so disabling this plugin will not take down your stylesheets. In the instance where a matching css file does not exist yet, the plugin will create the appropriate css file in the css directory. 
 
+I've used this for the Foundation 5 WordPress theme
+
 [Get detailed instructions on github](https://github.com/mpalpha/WP-SCSS)
 
 == Installation ==
